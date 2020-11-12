@@ -2,41 +2,45 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-// #region constants
+const propTypes = {};
 
-// #endregion
-
-// #region styled-components
-
-// #endregion
-
-// #region functions
-
-// #endregion
-
-// #region component
-const propTypes = {};   
-
-const defaultProps = {};
-
-/**
- * 
- */
 class Nav extends React.Component {
-constructor(props) {
-    super(props);
+    constructor(props) {
+        super(props);
 
-    this.state = {
-    };
-}
+        this.state = {
+        };
+    }
 
     render() {
-        return <div></div>;
+        return (
+            <React.Fragment>
+                <nav class="" style={{ height: '132px', backgroundColor: 'rgba(255, 255, 255, 0.26)' ,fontSize :'40px'}}>
+                    <div class="container">
+                        <div class="row pt-4">
+                            <div class="col-sm text-danger m-1">
+                            <img src="" class="img-fluid" alt="logo">
+                            </div>
+                            <div class="col-sm text-danger m-1">
+                                Home
+                            </div>
+                            <div class="col-sm text-danger m-1">
+                                History
+                            </div>
+                            <div class="col-sm text-danger m-1">
+                                Culture
+                            </div>
+                            <div class="col-sm text-danger  m-1">
+                                Gallary
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </React.Fragment >
+        )
     }
 }
 
 Nav.propTypes = propTypes;
-Nav.defaultProps = defaultProps;
-// #endregion
 
 export default Nav;
