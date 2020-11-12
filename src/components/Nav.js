@@ -18,25 +18,21 @@ class Nav extends React.Component {
                 <nav class="" style={{ height: '132px', backgroundColor: 'rgba(255, 255, 255, 0.26)' ,fontSize :'40px'}}>
                     <div class="container">
                         <div class="row pt-4">
-
                             <div class="col-sm text-danger m-1">
-                                <a class="navbar-brand" href="#">
-                                <img src="../../public/img/pic_Lantern/logo.png" width="30" height="30" alt="logo" >
-                                </a>   
+                            <img src="" class="img-fluid" alt="logo">
                             </div>
                             <div class="col-sm text-danger m-1">
-                                <a class="nav-link" href="#">Home</a>
+                                Home
                             </div>
                             <div class="col-sm text-danger m-1">
-                                <a class="nav-link" href="#">History</a>    
+                                History
                             </div>
                             <div class="col-sm text-danger m-1">
-                                <a class="nav-link" href="#">Culture</a> 
+                                Culture
                             </div>
                             <div class="col-sm text-danger  m-1">
-                                <a class="nav-link" href="#">Gallary</a> 
+                                Gallary
                             </div>
-                            
                         </div>
                     </div>
                 </nav>
