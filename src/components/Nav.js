@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import Logo from '../images/pic_Lantern/logo.png'
+import Logo from '../images/pic_Lantern/Logo2.png'
 
 
 
@@ -20,7 +20,7 @@ class Nav extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <nav class="navbar fixed-top" style={{ height: '132px', backgroundColor: 'rgba(255, 255, 255, 0.26)' ,fontSize :'40px'}}>
+                <nav class="navbar fixed-top" style={{ height: '132px', backgroundColor: 'rgba(23, 15, 49, 1)' ,fontSize :'40px'}}>
                     <div class="container">
                         <div class="row align-items-center ">
                             

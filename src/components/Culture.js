@@ -5,7 +5,8 @@ import Card2 from '../images/Card/card2.png'
 import Back1 from '../images/Card/backcard1.png'
 import Back2 from '../images/Card/backcard2.png'
 import Mascot2 from '../images/pic_Lantern/mascot.png'
-
+import Logo2 from '../images/pic_Lantern/logo.png'
+// import Cloud5 from '../images/cloud/cloud5.png'
 
 const Container = styled.div`
     background-color: rgba(28, 18, 57, 1);
@@ -15,6 +16,26 @@ const Container = styled.div`
     padding-top: 50px;
     
 `
+// const Cloud5 = styled.img`
+//     position: absolute;
+// width: 828px;
+// height: 168.95px
+// left: -10.28%;
+// top: 126px;
+
+    
+// `
+
+const Logo02 = styled.img`
+    position: absolute;
+width: 285.61px;
+height: 277px;
+left: 9px;
+top: 737px;
+
+    
+`
+
 const Mascot02 = styled.img`
     position: absolute;
 width: 223px;
@@ -100,6 +121,7 @@ export default class Content extends Component {
                 <Back01 src={Back1}></Back01>
                 <Back02 src={Back2}></Back02>
                 <Mascot02 src={Mascot2}></Mascot02>
+                <Logo02 src={Logo2}></Logo02>
                 
                 </Container>
             </React.Fragment>

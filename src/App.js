@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Culture from './components/Culture'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './css/App.css'
+import History from './components/History'
 
 
 
@@ -14,9 +15,12 @@ class App extends Component {
         
         <Nav />
         
-        <Home/>
+        {/* <Home/> */}
 
         {/* <Culture/> */}
+       
+        {/* <History/> */}
+        
         
       </React.Fragment>
     )
