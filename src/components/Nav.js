@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import Logo from '../images/pic_Lantern/logo.png'
+
+
 
 const propTypes = {};
 
@@ -15,31 +18,35 @@ class Nav extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <nav class="" style={{ height: '132px', backgroundColor: 'rgba(255, 255, 255, 0.26)' ,fontSize :'40px'}}>
-                    <div class="container">
-                        <div class="row pt-4">
 
-                            <div class="col-sm text-danger m-1">
+                <nav class="  " style={{ height: '132px', backgroundColor: 'rgba(23, 15, 49, 1)' ,fontSize :'40px'}}>
+                    <div class="container">
+                        <div class="row align-items-center ">
+                        <div class="col-sm ">
                                 <a class="navbar-brand" href="#">
-                                <img src="../../public/img/pic_Lantern/logo.png" width="30" height="30" alt="logo" >
-                                </a>   
+                                    <img src={Logo} alt="logo"/>
+                                    
+                                </a>
                             </div>
-                            <div class="col-sm text-danger m-1">
+                            
+                            <div class="col-sm text-light">
                                 <a class="nav-link" href="#">Home</a>
                             </div>
-                            <div class="col-sm text-danger m-1">
+                            <div class="col-sm text-light ">
                                 <a class="nav-link" href="#">History</a>    
                             </div>
-                            <div class="col-sm text-danger m-1">
+                            <div class="col-sm text-light ">
                                 <a class="nav-link" href="#">Culture</a> 
                             </div>
-                            <div class="col-sm text-danger  m-1">
+                            <div class="col-sm text-light ">
                                 <a class="nav-link" href="#">Gallary</a> 
                             </div>
                             
                         </div>
                     </div>
                 </nav>
+
+                
             </React.Fragment >
         )
     }
