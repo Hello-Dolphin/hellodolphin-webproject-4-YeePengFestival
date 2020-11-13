@@ -16,7 +16,7 @@ class App extends Component {
         
         <Home/>
 
-        <Culture/>
+        {/* <Culture/> */}
         
       </React.Fragment>
     )

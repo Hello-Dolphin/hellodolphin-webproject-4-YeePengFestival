@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
-import Moon from '../images/pic_Lantern/Moonwithfont.png'
+import Moon from '../images/pic_Lantern/Moon.png'
 import Lantern1 from '../images/pic_Lantern/lanfly1.png'
 import Lantern2 from '../images/pic_Lantern/lanfly2.png'
 import Lantern3 from '../images/pic_Lantern/lanfly3.png'
@@ -51,8 +51,8 @@ const Lan4 = styled.img`
     position: absolute;
     width: 269px;
     height: 179px;
-    left: 1127.62px;
-    top: 200.47px;
+    left: 1137.24px;
+    top: 211.08px;
     transform: rotate(-9.07deg);
 `
 const Container = styled.div`

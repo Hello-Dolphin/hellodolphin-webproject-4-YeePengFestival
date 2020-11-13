@@ -4,7 +4,7 @@ import Card1 from '../images/Card/card1.png'
 import Card2 from '../images/Card/card2.png'
 import Back1 from '../images/Card/backcard1.png'
 import Back2 from '../images/Card/backcard2.png'
-
+import Mascot2 from '../images/pic_Lantern/mascot.png'
 
 
 const Container = styled.div`
@@ -13,6 +13,15 @@ const Container = styled.div`
     min-height: 100vh; 
     padding-bottom: 300px;
     padding-top: 50px;
+    
+`
+const Mascot02 = styled.img`
+    position: absolute;
+width: 223px;
+height: 278px;
+left: 1160px;
+top: 709px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
     
 `
 
@@ -90,7 +99,8 @@ export default class Content extends Component {
                 <Card02 src={Card2}></Card02>
                 <Back01 src={Back1}></Back01>
                 <Back02 src={Back2}></Back02>
- 
+                <Mascot02 src={Mascot2}></Mascot02>
+                
                 </Container>
             </React.Fragment>
         )
