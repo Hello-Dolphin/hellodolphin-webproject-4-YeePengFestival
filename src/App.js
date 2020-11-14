@@ -15,7 +15,7 @@ class App extends Component {
         
         <Nav />
         
-        {/* <Home/> */}
+        <Home/>
 
         {/* <Culture/> */}
        
