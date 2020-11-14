@@ -5,8 +5,10 @@ import Lan2 from '../images/pic_Lantern/Lan2.png'
 // import Cloud2 from '../images/cloud/cloud2.png'
 
 const Container = styled.div`
-    background-color: rgba(28, 18, 57, 1);
+background-color: red;
+    /* background-color: rgba(28, 18, 57, 1); */
     width: 100%;
+    height : auto;
     min-height: 100vh; 
     padding-bottom: 300px;
     padding-top: 50px;

@@ -9,8 +9,10 @@ import Logo2 from '../images/pic_Lantern/logo.png'
 // import Cloud5 from '../images/cloud/cloud5.png'
 
 const Container = styled.div`
-    background-color: rgba(28, 18, 57, 1);
+    background-color:blue;
+    /* background-color: rgba(28, 18, 57, 1); */
     width: 100%;
+    height:auto;
     min-height: 100vh; 
     padding-bottom: 300px;
     padding-top: 50px;
@@ -115,13 +117,13 @@ export default class Content extends Component {
         return (
             <React.Fragment>
                 <Container>
-                 <Text>ธรรมเนียมปฎิบัติของประเพณียี่เป็งมีทั้งการลอยในแม่น้ำและการจุดประทีปโคมลอย ขึ้นไปสว่างไสวบนท้องฟ้าโดยจะมีการปล่อยโคมลอยทั้งหมด 2 เวลา คือ</Text>
+                 {/* <Text>ธรรมเนียมปฎิบัติของประเพณียี่เป็งมีทั้งการลอยในแม่น้ำและการจุดประทีปโคมลอย ขึ้นไปสว่างไสวบนท้องฟ้าโดยจะมีการปล่อยโคมลอยทั้งหมด 2 เวลา คือ</Text>
                 <Card01 src={Card1}></Card01>
                 <Card02 src={Card2}></Card02>
                 <Back01 src={Back1}></Back01>
                 <Back02 src={Back2}></Back02>
                 <Mascot02 src={Mascot2}></Mascot02>
-                <Logo02 src={Logo2}></Logo02>
+                <Logo02 src={Logo2}></Logo02> */}
                 
                 </Container>
             </React.Fragment>

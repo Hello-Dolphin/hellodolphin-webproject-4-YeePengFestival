@@ -58,6 +58,7 @@ const Lanfly04 = styled.img`
 const Container = styled.div`
     background-color: rgba(28, 18, 57, 1);
     width: 100%;
+    height:auto;
     min-height: 100vh; 
     padding-bottom: 300px;
     padding-top: 50px;
@@ -71,11 +72,11 @@ export default class Content extends Component {
                 <Container>
 
                   <MoonFont src={Moon}></MoonFont>
-                  <Lanfly01 src={Lanfly1}></Lanfly01>
+                  {/* <Lanfly01 src={Lanfly1}></Lanfly01>
                   <Lanfly02 src={Lanfly2}></Lanfly02>
                   <Lanfly03 src={Lanfly3}></Lanfly03>
                   <Lanfly04 src={Lanfly4}></Lanfly04>
-                  <Mascot01 src={Mascot1}></Mascot01>
+                  <Mascot01 src={Mascot1}></Mascot01> */}
     
 
                 </Container>

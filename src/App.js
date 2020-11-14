@@ -12,16 +12,13 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        
-        <Nav />
-        
-        <Home/>
 
-        {/* <Culture/> */}
-       
-        {/* <History/> */}
-        
-        
+        <Nav />
+
+        <Home />
+        <History />
+        <Culture />
+
       </React.Fragment>
     )
   }

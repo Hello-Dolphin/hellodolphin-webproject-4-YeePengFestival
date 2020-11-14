@@ -3,8 +3,10 @@ import styled from 'styled-components';
 
 
 const Container = styled.div`
-    background-color: rgba(28, 18, 57, 1);
+    background-color:yellow;
+    /* background-color: rgba(28, 18, 57, 1); */
     width: 100%;
+    height:auto;
     min-height: 100vh; 
     padding-bottom: 300px;
     padding-top: 50px;
@@ -16,8 +18,8 @@ export default class Content extends Component {
         return (
             <React.Fragment>
                 <Container>
-                 
-                
+
+
                 </Container>
             </React.Fragment>
         )
