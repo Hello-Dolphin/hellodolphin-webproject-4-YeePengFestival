@@ -14,6 +14,7 @@ const Container = styled.div`
     width: 100%;
     height:auto;
     min-height: 100vh; 
+    max-height:100vh;
     padding-bottom: 300px;
     padding-top: 50px;
     
@@ -25,88 +26,86 @@ const Container = styled.div`
 // left: -10.28%;
 // top: 126px;
 
-    
+
 // `
 
 const Logo02 = styled.img`
     position: absolute;
-width: 285.61px;
-height: 277px;
-left: 9px;
-top: 737px;
+    width: 285.61px;
+    height: 277px;
+    margin-top:20%;
+    
 
     
 `
 
 const Mascot02 = styled.img`
     position: absolute;
-width: 223px;
-height: 278px;
-left: 1160px;
-top: 709px;
-transform: matrix(-1, 0, 0, 1, 0, 0);
-    
+    width: 223px;
+    height: 278px;
+    transform: matrix(-1, 0, 0, 1, 0, 0); 
+    margin-left:83%;
+    margin-top:75%;
 `
 
 const Card01 = styled.img`
     position: absolute;
-    width: 359px;
-    height: 531px;
-    left: 317px;
-    top: 333px;
+    width: 269px;
+    height: 431px;
     filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
     border-radius: 31px;
-    
+    margin-top:26%;
+    margin-left:45%;
 `
 
 const Back01 = styled.img`
     position: absolute;
-    width: 359px;
-    height: 531px;
-    left: 317px;
-    top: 333px;
+    width: 269px;
+    height: 431px;
     filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
     border-radius: 31px;
-    
 `
 
 const Card02 = styled.img`
     position: absolute;
-    width: 359px;
-    height: 531px;
-    left: 770px;
-    top: 333px;
+    width: 269px;
+    height: 431px;
     filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
     border-radius: 31px;
     
 `
 const Back02 = styled.img`
     position: absolute;
-    width: 359px;
-    height: 531px;
-    left: 770px;
-    top: 333px;
+    width: 269px;
+    height: 431px;
     filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
     border-radius: 31px;
-    
 `
 
 const Text = styled.p`
     position: absolute;
-    width: 831px;
+    width: 821px;
     height: 92px;
-    left: 487px;
-    top: 202px;
-
-    font-family: Caveat;
-    font-style: normal;
-    font-weight: bold;
+    right:5%;
+    font-family: 'Prompt', sans-serif;
+    font-style: normal; 
+    font-weight: bold; 
     font-size: 24px;
     line-height: 35px;
     /* or 146% */
-
     text-align: center;
+    color: #FFFFFF;
+    
+`
 
+const Text2 = styled.p`
+    font-family: 'Prompt', sans-serif;
+    font-size: 36px; 
+    font-style: normal; 
+    font-weight: 400; 
+    line-height: 45px; 
+    letter-spacing: 0em; 
+    text-align: center;
     color: #FFFFFF;
     
 `
@@ -117,14 +116,17 @@ export default class Content extends Component {
         return (
             <React.Fragment>
                 <Container>
-                 {/* <Text>ธรรมเนียมปฎิบัติของประเพณียี่เป็งมีทั้งการลอยในแม่น้ำและการจุดประทีปโคมลอย ขึ้นไปสว่างไสวบนท้องฟ้าโดยจะมีการปล่อยโคมลอยทั้งหมด 2 เวลา คือ</Text>
-                <Card01 src={Card1}></Card01>
-                <Card02 src={Card2}></Card02>
-                <Back01 src={Back1}></Back01>
-                <Back02 src={Back2}></Back02>
-                <Mascot02 src={Mascot2}></Mascot02>
-                <Logo02 src={Logo2}></Logo02> */}
-                
+                    <Text>ธรรมเนียมปฎิบัติของประเพณียี่เป็งมีทั้งการลอยในแม่น้ำและการจุดประทีปโคมลอย ขึ้นไปสว่างไสวบนท้องฟ้าโดยจะมีการปล่อยโคมลอยทั้งหมด 2 เวลา คือ</Text>
+                    {/* <Card01 src={Card1}></Card01>
+                    <Card02 src={Card2}></Card02>
+                    <Back01 src={Back1}></Back01>
+                    <Back02 src={Back2}></Back02>  */}
+                    <Mascot02 src={Mascot2}></Mascot02>
+                    <Logo02 src={Logo2}></Logo02>
+                    {/* <Text2>เวลากลางวัน</Text2>
+                    <Text2>เวลากลางคืน</Text2> */}
+
+
                 </Container>
             </React.Fragment>
         )

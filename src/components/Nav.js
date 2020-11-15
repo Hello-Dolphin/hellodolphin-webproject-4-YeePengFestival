@@ -19,7 +19,7 @@ class Nav extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <nav class="navbar navbar-default navbar-fixed-top" style={{ height: '132px', backgroundColor: 'rgba(23, 15, 49, 1)', fontSize: '40px', color: 'white' }}>
+                <nav class="navbar navbar-default navbar fixed-top" style={{ height: '132px', backgroundColor: 'rgba(23, 15, 49, 1)', fontSize: '40px', color: 'white' }}>
                     <div class="container-fluid">
                         <div class="px-auto row align-items-center w-100" style={{flexWrap:'noWrap'}}>
                             <div class="">
@@ -29,7 +29,7 @@ class Nav extends React.Component {
                             </div>
 
                             <div class="col-3 text-center">
-                                <a class="nav-link text-white" href="#">Home</a>
+                                <a class="nav-link text-white" href="#home">Home</a>
                             </div>
 
                             <div class="col-3 text-center">    
