@@ -18,11 +18,8 @@ class App extends Component {
 
         <Home />
         <History />
-         <Culture />
-        {/* <Gallery/>  */}
+         <Culture /> 
          <Group/> 
-        
-
       </React.Fragment>
     )
   }

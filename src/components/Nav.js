@@ -5,6 +5,7 @@ import Logo from '../images/pic_Lantern/Logo2.png'
 
 
 
+
 const propTypes = {};
 
 
@@ -20,7 +21,7 @@ class Nav extends React.Component {
         return (
             <React.Fragment>
                 <nav class="navbar navbar-default  fixed-top" style={{ height: '132px', backgroundColor: 'rgba(23, 15, 49, 1)', fontSize: '40px', color: 'white' }}>
-                    <div class="container-fluid">
+                    <div class="container-fluid" >
                         <div class="px-auto row align-items-center w-100" style={{flexWrap:'noWrap'}}>
 
                             <div class="col-3 text-center">

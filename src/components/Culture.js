@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ReactCardFlip from 'react-card-flip';
 import styled from 'styled-components';
 import Card1 from '../images/Card/card1.png'
 import Card2 from '../images/Card/card2.png'
@@ -100,36 +101,17 @@ const Mascot02 = styled.img`
 
 const Card01 = styled.img`
     position: absolute;
-    width: 290px;
-    height: 431px;
+    width: 220px;
+    height: 330px; 
     filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
     border-radius: 31px;
-    @media only screen and (max-width: 1920px) {
-        margin-left:63%;
-        margin-top:38%;
-    }
-    @media only screen and (max-width: 1440px) {
-        margin-left:23%;
-        margin-top:25%;
-    }
-     @media only screen and (max-width: 1280px) {
-        margin-left:23%;
-        margin-top:25%;
-        width: 245px;
-        height: 360px;
-    }
-    @media only screen and (max-width: 1024px) {
-        margin-left:22%;
-        margin-top:29%;
-        width: 220px;
-        height: 330px; 
-    }
+    
 `
 
 const Back01 = styled.img`
     position: absolute;
-    width: 290px;
-    height: 431px;
+    width: 220px;
+    height: 330px; 
     filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
     border-radius: 31px;
     margin-top:22%;
@@ -138,31 +120,13 @@ const Back01 = styled.img`
 
 const Card02 = styled.img`
     position: absolute;
-    width: 290px;
-    height: 431px;
+    width: 220px;
+    height: 330px; 
     filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
     border-radius: 31px;
     margin-top:22%;
     margin-left:40%;
-    @media only screen and (max-width: 1920px) {
-        margin-left:63%;
-        margin-top:38%;
-    }
-    @media only screen and (max-width: 1440px) {
-        margin-left:47%;
-        margin-top:25%;
-    }
-     @media only screen and (max-width: 1280px) {
-        margin-left:47%;
-        margin-top:25%;
-        width: 245px;
-        height: 360px; 
-    }
-    @media only screen and (max-width: 1024px) {
-        margin-left:48%;
-        margin-top:29%;
-        width: 220px;
-        height: 330px; 
+    
     }
     
 `
@@ -250,6 +214,27 @@ const T3 = styled.p`
     color: #FFFFFF;
     margin-top:52%;
     margin-left:43%;
+    @media only screen and (max-width: 1920px) {
+        margin-left:33%;
+        margin-top:50%;
+    }
+    @media only screen and (max-width: 1440px) {
+        margin-left:46%;
+        margin-top:57%;
+    }
+     @media only screen and (max-width: 1280px) {
+        margin-left:51%;
+        margin-top:55%;
+        font-size: 26px;
+       
+    }
+    @media only screen and (max-width: 1024px) {
+        margin-left:53%;
+        margin-top:63%;
+        font-size: 24px;
+        
+    }
+    
     
     
 `
@@ -264,12 +249,67 @@ const T4 = styled.p`
     color: #FFFFFF;
     margin-top:52%;
     margin-left:18%;
+    @media only screen and (max-width: 1920px) {
+        margin-left:13%;
+        margin-top:50%;
+    }
+    @media only screen and (max-width: 1440px) {
+        margin-left:21%;
+        margin-top:57%;
+    }
+     @media only screen and (max-width: 1280px) {
+        margin-left:27%;
+        margin-top:55%;
+        font-size: 26px;
+       
+    }
+    @media only screen and (max-width: 1024px) {
+        margin-left:26%;
+        margin-top:63%;
+        font-size: 24px;
+        
+    }
     
     
 `
+const Box = styled.div`
+    position: absolute;
+    margin-top:23%;
+    margin-left:13%;
+`
+const Box2 = styled.div`
+    position: absolute;
+    margin-top:23%;
+    margin-left:38%;
+`
 
+class FlipCard extends Component {
+  constructor(props) {
+      super(props);
+      this.state = {
+          isFlipped: false
+      }
+      this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick(e) {
+    e.preventDefault();
+    this.setState({ isFlipped: !this.state.isFlipped });
+  }
+  render() {
+      const { isFlipped } = this.state;
+      const { imgFront, imgBack } = this.props;
+      return (
+          <div id="FlipCard" >
+              <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
+                  <img src={ imgFront } alt="Front img" onClick={ this.handleClick } draggable="false"/>
+                  <img src={ imgBack } alt="Back img" onClick={ this.handleClick } draggable="false"/>
+                </ReactCardFlip>
+          </div>
+      ) 
+      }
+    }
 
-export default class Content extends Component {
+ class Content extends Component {
     render() {
         return (
             <React.Fragment>
@@ -277,11 +317,8 @@ export default class Content extends Component {
                 <div class="container" id="culture">
                     <T1>Culture</T1>
                     <T2>ธรรมเนียมปฎิบัติของประเพณียี่เป็งมีทั้งการลอยในแม่น้ำและการจุดประทีปโคมลอย<br/> ขึ้นไปสว่างไสวบนท้องฟ้าโดยจะมีการปล่อยโคมลอยทั้งหมด 2 เวลา คือ</T2>
-                    
-                    <Card01 src={Card1}></Card01>
-                    <Card02 src={Card2}></Card02>
-                    {/* <Back01 src={Back1}></Back01> */}
-                    {/* <Back02 src={Back2}></Back02>  */}
+                    <Box><FlipCard imgFront={Card1} imgBack={Back1}></FlipCard></Box>
+                    <Box2><FlipCard imgFront={Card2} imgBack={Back2}></FlipCard></Box2>
                     <Mascot02 src={Mascot2}></Mascot02>
                     <Lan01 src={Lan1}></Lan01>
                     <Cloud01 src={cloud5}></Cloud01>
@@ -295,3 +332,5 @@ export default class Content extends Component {
         )
     }
 }
+export default Content;
+export { FlipCard };
