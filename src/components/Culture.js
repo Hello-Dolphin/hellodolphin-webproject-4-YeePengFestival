@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import ReactCardFlip from 'react-card-flip';
 import styled from 'styled-components';
-import Card1 from '../images/Card/card1.png'
-import Card2 from '../images/Card/card2.png'
-import Back1 from '../images/Card/backcard1.png'
-import Back2 from '../images/Card/backcard2.png'
+import Card1 from '../images/Card/fcard2.png'
+import Card2 from '../images/Card/fcard1.png'
+import Back1 from '../images/Card/bcard2.png'
+import Back2 from '../images/Card/bcard1.png'
 import Mascot2 from '../images/pic_Lantern/mascot.png'
 import Lan1 from '../images/pic_Lantern/logo.png'
 import cloud5 from '../images/cloud/cloud5.png';
@@ -99,46 +99,46 @@ const Mascot02 = styled.img`
     
 `
 
-const Card01 = styled.img`
-    position: absolute;
-    width: 220px;
-    height: 330px; 
-    filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
-    border-radius: 31px;
+// const Card01 = styled.img`
+//     position: absolute;
+//     width: 220px;
+//     height: 330px; 
+//     filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
+//     border-radius: 31px;
     
-`
+// `
 
-const Back01 = styled.img`
-    position: absolute;
-    width: 220px;
-    height: 330px; 
-    filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
-    border-radius: 31px;
-    margin-top:22%;
-    margin-left:13%;
-`
+// const Back01 = styled.img`
+//     position: absolute;
+//     width: 220px;
+//     height: 330px; 
+//     filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
+//     border-radius: 31px;
+//     margin-top:22%;
+//     margin-left:13%;
+// `
 
-const Card02 = styled.img`
-    position: absolute;
-    width: 220px;
-    height: 330px; 
-    filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
-    border-radius: 31px;
-    margin-top:22%;
-    margin-left:40%;
+// const Card02 = styled.img`
+//     position: absolute;
+//     width: 220px;
+//     height: 330px; 
+//     filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
+//     border-radius: 31px;
+//     margin-top:22%;
+//     margin-left:40%;
     
-    }
+//     }
     
-`
-const Back02 = styled.img`
-    position: absolute;
-    width: 290px;
-    height: 431px;
-    filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
-    border-radius: 31px;
-    margin-top:22%;
-    margin-left:40%;
-`
+// `
+// const Back02 = styled.img`
+//     position: absolute;
+//     width: 290px;
+//     height: 431px;
+//     filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
+//     border-radius: 31px;
+//     margin-top:22%;
+//     margin-left:40%;
+// `
 
 const T1 = styled.p`
     position: absolute;
@@ -272,16 +272,7 @@ const T4 = styled.p`
     
     
 `
-const Box = styled.div`
-    position: absolute;
-    margin-top:23%;
-    margin-left:13%;
-`
-const Box2 = styled.div`
-    position: absolute;
-    margin-top:23%;
-    margin-left:38%;
-`
+
 
 class FlipCard extends Component {
   constructor(props) {
@@ -317,13 +308,16 @@ class FlipCard extends Component {
                 <div class="container" id="culture">
                     <T1>Culture</T1>
                     <T2>ธรรมเนียมปฎิบัติของประเพณียี่เป็งมีทั้งการลอยในแม่น้ำและการจุดประทีปโคมลอย<br/> ขึ้นไปสว่างไสวบนท้องฟ้าโดยจะมีการปล่อยโคมลอยทั้งหมด 2 เวลา คือ</T2>
-                    <Box><FlipCard imgFront={Card1} imgBack={Back1}></FlipCard></Box>
-                    <Box2><FlipCard imgFront={Card2} imgBack={Back2}></FlipCard></Box2>
                     <Mascot02 src={Mascot2}></Mascot02>
                     <Lan01 src={Lan1}></Lan01>
                     <Cloud01 src={cloud5}></Cloud01>
                     <T4>เวลากลางวัน</T4>
                     <T3>เวลากลางคืน</T3> 
+                    <div class="d-flex justify-content-center">
+                    <FlipCard imgFront={Card1} imgBack={Back1}></FlipCard>
+                    <FlipCard imgFront={Card2} imgBack={Back2}></FlipCard>
+                    </div>
+                    
                     
                    </div>
 
