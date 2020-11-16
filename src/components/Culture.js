@@ -8,6 +8,8 @@ import Back2 from '../images/Card/bcard1.png'
 import Mascot2 from '../images/pic_Lantern/mascot.png'
 import Lan1 from '../images/pic_Lantern/logo.png'
 import cloud5 from '../images/cloud/cloud5.png';
+import '../css/Culture.css'
+
 
 
 const Container = styled.div`
@@ -99,46 +101,6 @@ const Mascot02 = styled.img`
     
 `
 
-// const Card01 = styled.img`
-//     position: absolute;
-//     width: 220px;
-//     height: 330px; 
-//     filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
-//     border-radius: 31px;
-    
-// `
-
-// const Back01 = styled.img`
-//     position: absolute;
-//     width: 220px;
-//     height: 330px; 
-//     filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
-//     border-radius: 31px;
-//     margin-top:22%;
-//     margin-left:13%;
-// `
-
-// const Card02 = styled.img`
-//     position: absolute;
-//     width: 220px;
-//     height: 330px; 
-//     filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
-//     border-radius: 31px;
-//     margin-top:22%;
-//     margin-left:40%;
-    
-//     }
-    
-// `
-// const Back02 = styled.img`
-//     position: absolute;
-//     width: 290px;
-//     height: 431px;
-//     filter: drop-shadow(10px 10px 30px rgba(177, 177, 177, 0.5));
-//     border-radius: 31px;
-//     margin-top:22%;
-//     margin-left:40%;
-// `
 
 const T1 = styled.p`
     position: absolute;
@@ -313,12 +275,10 @@ class FlipCard extends Component {
                     <Cloud01 src={cloud5}></Cloud01>
                     <T4>เวลากลางวัน</T4>
                     <T3>เวลากลางคืน</T3> 
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center" id="card">
                     <FlipCard imgFront={Card1} imgBack={Back1}></FlipCard>
                     <FlipCard imgFront={Card2} imgBack={Back2}></FlipCard>
                     </div>
-                    
-                    
                    </div>
 
                 </Container>
