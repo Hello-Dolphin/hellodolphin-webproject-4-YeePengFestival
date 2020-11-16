@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './css/App.css'
 import History from './components/History'
 import Gallery from './components/Gallery'
-// import Group from './components/Group'
+import Group from './components/Group'
 
 
 class App extends Component {
@@ -17,10 +17,10 @@ class App extends Component {
         <Nav />
 
         <Home />
-        {/* <History />
-        <Culture />
-        <Gallery/> */}
-        {/* <Group/> */}
+        <History />
+         <Culture />
+        {/* <Gallery/>  */}
+         <Group/> 
         
 
       </React.Fragment>
