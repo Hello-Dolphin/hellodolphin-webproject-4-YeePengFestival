@@ -28,7 +28,7 @@ const Cloud01 = styled.img`
  
     @media only screen and (max-width: 1920px) {
         margin-left:-26%;
-        margin-top:13%;
+        margin-top:9%;
     }
     @media only screen and (max-width: 1440px) {
         margin-left:-17%;
@@ -117,7 +117,7 @@ const T1 = styled.p`
     margin-left:-12%;
     @media only screen and (max-width: 1920px) {
         margin-left:-19%;
-        margin-top:15%;
+        margin-top:11%;
     }
     @media only screen and (max-width: 1440px) {
         margin-left:-8%;
@@ -146,7 +146,7 @@ const T2 = styled.p`
 
     @media only screen and (max-width: 1920px) {
         margin-left:20%;
-        margin-top:16%;
+        margin-top:12%;
     }
     @media only screen and (max-width: 1440px) {
         margin-left:32%;
@@ -178,21 +178,21 @@ const T3 = styled.p`
     margin-left:43%;
     @media only screen and (max-width: 1920px) {
         margin-left:33%;
-        margin-top:50%;
+        margin-top:44%;
     }
     @media only screen and (max-width: 1440px) {
-        margin-left:46%;
+        margin-left:44%;
         margin-top:57%;
     }
      @media only screen and (max-width: 1280px) {
-        margin-left:51%;
-        margin-top:55%;
+        margin-left:50%;
+        margin-top:59%;
         font-size: 26px;
        
     }
     @media only screen and (max-width: 1024px) {
-        margin-left:53%;
-        margin-top:63%;
+        margin-left:55%;
+        margin-top:69%;
         font-size: 24px;
         
     }
@@ -212,22 +212,22 @@ const T4 = styled.p`
     margin-top:52%;
     margin-left:18%;
     @media only screen and (max-width: 1920px) {
-        margin-left:13%;
-        margin-top:50%;
+        margin-left:16%;
+        margin-top:44%;
     }
     @media only screen and (max-width: 1440px) {
         margin-left:21%;
         margin-top:57%;
     }
      @media only screen and (max-width: 1280px) {
-        margin-left:27%;
-        margin-top:55%;
+        margin-left:25%;
+        margin-top:59%;
         font-size: 26px;
        
     }
     @media only screen and (max-width: 1024px) {
-        margin-left:26%;
-        margin-top:63%;
+        margin-left:23%;
+        margin-top:69%;
         font-size: 24px;
         
     }
