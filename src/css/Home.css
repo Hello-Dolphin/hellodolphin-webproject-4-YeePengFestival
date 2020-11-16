@@ -29,7 +29,7 @@
     }
 }
 .lan1 {
-    animation: lan1 10s ease-in-out infinite;
+    animation: lan1 20s ease-in-out infinite;
 }
 @keyframes lan1{
     0% {
@@ -49,10 +49,10 @@
     }
 }
 .lan2 {
-    animation: lan2 10s ease-in-out infinite;
+    animation: lan2 15s ease-in-out infinite;
 }
 .lan4 {
-    animation: lan1 10s ease-in-out infinite;
+    animation: lan1 15s ease-in-out infinite;
 }
 @keyframes lan2{
     0% {
