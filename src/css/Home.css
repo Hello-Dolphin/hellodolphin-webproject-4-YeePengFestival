@@ -52,7 +52,19 @@
     animation: lan2 15s ease-in-out infinite;
 }
 .lan4 {
-    animation: lan1 15s ease-in-out infinite;
+    animation: lan1 15s ease-in-out infinite,
+                cm 10s ease-in-out infinite;
+}
+@keyframes cm {
+  0%  {
+        opacity: 1;
+    }
+  50%  {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 @keyframes lan2{
     0% {
