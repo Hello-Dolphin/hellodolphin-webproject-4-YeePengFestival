@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
 import Moon2 from '../images/pic_Lantern/Moon2.png';
-import wave1 from '../images/pic_Lantern/Wave1.png';
-import wave2 from '../images/pic_Lantern/Wave2.png';
-import wave3 from '../images/pic_Lantern/Wave3.png';
+import wave1 from '../images/pic_Lantern/wave1.png';
+import wave2 from '../images/pic_Lantern/wave2.png';
+import wave3 from '../images/pic_Lantern/wave3.png';
 import yellowlan from '../images/pic_Lantern/yellowlan.png';
 import pinklan from '../images/pic_Lantern/pinklan.png';
 import purplelan from '../images/pic_Lantern/purplelan.png';
 import manylan from '../images/pic_Lantern/manylan.png';
 import cloud from '../images/cloud/cloud7.png';
+import Star1 from '../images/pic_Lantern/star1.png'
+import Star2 from '../images/pic_Lantern/star2.png'
+import Star3 from '../images/pic_Lantern/star3.png'
+import '../css/Group.css'
 
 const Container = styled.div`
     background-color: rgba(28, 18, 57, 1);
@@ -333,7 +337,7 @@ const Mlan = styled.img`
     position: absolute;
     width: 246px;
     height: 260px;
-    
+    z-index: 4;
     @media only screen and (max-width: 1920px){
     margin-top:-3%;
     margin-left:70%;
@@ -556,35 +560,65 @@ const T6 = styled.p`
     
 }
 `
+const Star01 = styled.img`
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    margin-top:165%;
+    
+`
+const Star02 = styled.img`
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0x;
+    top: 0px;
+    z-index: 0;
+    margin-top:165%;
+`
+const Star03 = styled.img`
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0x;
+    top: 0px;
+    z-index: 0;
+    margin-top:165%;
+`
 
 export default class Content extends Component {
     render() {
         return (
             <React.Fragment>
-            <Container>
-                
-                <Moon02 src={Moon2}></Moon02>
-                <Mlan src={manylan}></Mlan>
-                <Cloud01 src={cloud}></Cloud01>
-                <T1>"มาย" <br />[Web Design]</T1>
-                <T2>"โอ๊ต" <br />[Web Design]</T2>
-                <T3>"แบม" <br />[Front-End]</T3>
-                <T4>"มาย" <br />[Front-End]</T4>                
-                <T6>"ท๊อป" <br />[Infra]</T6>
-                <Ylan2 src={yellowlan}></Ylan2>
-                <PPlan src={purplelan}></PPlan>
-                <Plan2 src={pinklan}></Plan2>
-                <Wave01 src={wave1}></Wave01> 
-                <T5>"ไผ่" <br />[Front-End]</T5>
-                <Plan3 src={pinklan}></Plan3>              
-                <Wave02 src={wave2}></Wave02>                
-                <Ylan src={yellowlan}></Ylan>
-                <Plan src={pinklan}></Plan>
-                <Wave03 src={wave3}></Wave03>
-                
+                <Container>
+
+                    <Moon02 className="moon" src={Moon2}></Moon02>
+                    <Mlan className="mn2" src={manylan}></Mlan>
+                    <Cloud01 className="main" src={cloud}></Cloud01>
+                    <T1 className="m1">"มาย" <br />[Web Design]</T1>
+                    <T2 className="o">"โอ๊ต" <br />[Web Design]</T2>
+                    <T3 className="b">"แบม" <br />[Front-End]</T3>
+                    <T4 className="m2">"มาย" <br />[Front-End]</T4>
+                    <T6 className="t">"ท๊อป" <br />[Infra]</T6>
+                    <Ylan2 className="o" src={yellowlan}></Ylan2>
+                    <PPlan className="t" src={purplelan}></PPlan>
+                    <Plan2 className="m2" src={pinklan}></Plan2>
+                    <Wave01 className="wave1"src={wave1}></Wave01>
+                    <T5 className="p">"ไผ่" <br />[Front-End]</T5>
+                    <Plan3 className="p" src={pinklan}></Plan3>
+                    <Wave02 className="wave2" src={wave2}></Wave02>
+                    <Ylan className="m1" src={yellowlan}></Ylan>
+                    <Plan className="b" src={pinklan}></Plan>
+                    <Wave03 className="wave3" src={wave3}></Wave03>
+                    <Star01 className="star1" src={Star1}></Star01>
+                    <Star02 className="star2" src={Star2}></Star02>
+                    <Star03 className="star3" src={Star3}></Star03>
                 </Container>
             </React.Fragment>
         )
     }
-    
+
 }

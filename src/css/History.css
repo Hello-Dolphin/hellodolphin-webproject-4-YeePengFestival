@@ -1,4 +1,4 @@
-.star1 { 
+/* .star1 { 
         animation: star1 50s linear infinite,
                opa1 30s ease-in-out infinite;
 }
@@ -45,7 +45,7 @@
     100% {
         transform: translateX(0%);
     }
-} 
+}  */
 
 @keyframes opa1 {
     0%,20%,40%,60%,80%,100% 
@@ -159,4 +159,28 @@
     100% {
         transform: translateX(0%);
     }
+}
+
+.wave1 {
+    animation: wave1 4s ease-in-out infinite;
+}
+@keyframes wave1 {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-2%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+.wave2 {
+    animation: wave1 4s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.wave3 {
+    animation: wave1 4s ease-in-out infinite;
+    animation-delay: 2s;
 }

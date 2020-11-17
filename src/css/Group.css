@@ -1,0 +1,76 @@
+.moon {
+    animation: moonup 10s infinite;
+}
+
+@keyframes moonup {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.mn2 {
+    animation: mn2 25s infinite;
+}
+@keyframes mn2 {
+    0% {
+        transform: translateY(20%) rotate(0deg);
+    }
+    20% {
+        transform: translateY(0%) rotate(8deg);
+    }
+    60% {
+        transform: translateY(20%) rotate(0deg);
+    }
+    80% {
+        transform: translateY(0%) rotate(-8deg);
+    }
+    100% {
+        transform: translateY(20%) rotate(0deg);
+    }
+}
+
+.o {
+    animation: yellow1 3s ease-in-out infinite;
+}
+@keyframes yellow1 {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-8%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.t {
+    animation: yellow1 3s ease-in-out infinite ;
+    animation-delay: 1s;
+}
+
+.m2 {
+    animation: yellow1 3s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.p {
+    animation: yellow1 3s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+
+.m1 {
+    animation: yellow1 3s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.b {
+    animation: yellow1 3s ease-in-out infinite;
+    animation-delay: 1s;
+}

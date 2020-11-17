@@ -193,7 +193,7 @@ const Star01 = styled.img`
     left: 0px;
     top: 0px;
     z-index: 0;
-    margin-top:60%;
+    margin-top:110%;
     
 `
 const Star02 = styled.img`
@@ -203,7 +203,7 @@ const Star02 = styled.img`
     left: 0x;
     top: 0px;
     z-index: 0;
-    margin-top:60%;
+    margin-top:110%;
 `
 const Star03 = styled.img`
     position: absolute;
@@ -212,7 +212,7 @@ const Star03 = styled.img`
     left: 0x;
     top: 0px;
     z-index: 0;
-    margin-top:60%;
+    margin-top:110%;
 `
 const T2 = styled.p`
     position: absolute;

@@ -8,7 +8,11 @@ import Back2 from '../images/Card/bcard1.png'
 import Mascot2 from '../images/pic_Lantern/mascot.png'
 import Lan1 from '../images/pic_Lantern/logo.png'
 import cloud5 from '../images/cloud/cloud5.png';
+import Star1 from '../images/pic_Lantern/star1.png'
+import Star2 from '../images/pic_Lantern/star2.png'
+import Star3 from '../images/pic_Lantern/star3.png'
 import '../css/Culture.css'
+import '../css/History.css'
 
 
 
@@ -234,6 +238,34 @@ const T4 = styled.p`
     
     
 `
+const Star01 = styled.img`
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    margin-top:60%;
+    
+`
+const Star02 = styled.img`
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0x;
+    top: 0px;
+    z-index: 0;
+    margin-top:60%;
+`
+const Star03 = styled.img`
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0x;
+    top: 0px;
+    z-index: 0;
+    margin-top:60%;
+`
 
 
 class FlipCard extends Component {
@@ -256,6 +288,7 @@ class FlipCard extends Component {
               <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
                   <img src={ imgFront } alt="Front img" onClick={ this.handleClick } draggable="false"/>
                   <img src={ imgBack } alt="Back img" onClick={ this.handleClick } draggable="false"/>
+                  
                 </ReactCardFlip>
           </div>
       ) 
@@ -268,16 +301,19 @@ class FlipCard extends Component {
             <React.Fragment>
                 <Container >
                 <div class="container" id="culture">
-                    <T1>Culture</T1>
+                    <T1 className="topic">Culture</T1>
                     <T2>ธรรมเนียมปฎิบัติของประเพณียี่เป็งมีทั้งการลอยในแม่น้ำและการจุดประทีปโคมลอย<br/> ขึ้นไปสว่างไสวบนท้องฟ้าโดยจะมีการปล่อยโคมลอยทั้งหมด 2 เวลา คือ</T2>
                     <Mascot02 src={Mascot2}></Mascot02>
-                    <Lan01 src={Lan1}></Lan01>
-                    <Cloud01 src={cloud5}></Cloud01>
+                    <Lan01 className="lan2"src={Lan1}></Lan01>
+                    <Cloud01 className="topic" src={cloud5}></Cloud01>
                     <T4>เวลากลางวัน</T4>
                     <T3>เวลากลางคืน</T3> 
                     <div class="d-flex justify-content-center" id="card">
                     <FlipCard imgFront={Card1} imgBack={Back1}></FlipCard>
                     <FlipCard imgFront={Card2} imgBack={Back2}></FlipCard>
+                    <Star01 className="star1" src={Star1}></Star01>
+                        <Star02 className="star2" src={Star2}></Star02>
+                        <Star03 className="star3" src={Star3}></Star03>
                     </div>
                    </div>
 
